@@ -11,7 +11,7 @@ const Useraccount = () => {
   const [deleteUserId, setDeleteUserId] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:9080/api/students")
+    fetch("http://91.203.132.60:9080/api/students")
       .then((response) => response.json())
       .then((data) => setUsers(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -29,7 +29,7 @@ const Useraccount = () => {
   };
 
   const confirmDelete = () => {
-    fetch(`http://localhost:9080/api/students/${deleteUserId}`, {
+    fetch(`http://91.203.132.60:9080/api/students/${deleteUserId}`, {
       method: 'DELETE',
     })
       .then(() => {
@@ -50,8 +50,8 @@ const Useraccount = () => {
     
     const method = editingUser ? "PUT" : "POST";
     const url = editingUser
-      ? `http://localhost:9080/api/students/${formData.id}`
-      : "http://localhost:9080/api/students";
+      ? `http://91.203.132.60:9080/api/students/${formData.id}`
+      : "http://91.203.132.60:9080/api/students";
   
     // Ensure id is only included for editing, remove it when creating a new user
     const requestData = { ...formData };
