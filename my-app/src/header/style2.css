@@ -1,0 +1,70 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling for background and layout */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header container */
+.navigationHeader {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links */
+.navigationHeader a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navigationHeader a:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+/* Active link styling (Optional if you want to highlight the current page) */
+.navigationHeader a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navigationHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navigationHeader a {
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .navigationHeader a:hover {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        transform: none;
+    }
+}

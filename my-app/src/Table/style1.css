@@ -1,0 +1,79 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Main container */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header Styling */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Row Styling */
+td {
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Lunch break cell */
+td[colspan="5"] {
+    background-color: #ffcc00;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
